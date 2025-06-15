@@ -1,9 +1,10 @@
-﻿global using Community.VisualStudio.Toolkit;
+﻿global using System;
 global using Microsoft.VisualStudio.Shell;
-global using System;
+global using Community.VisualStudio.Toolkit;
 global using Task = System.Threading.Tasks.Task;
-using System.Runtime.InteropServices;
+
 using System.Threading;
+using System.Runtime.InteropServices;
 
 namespace LineUp
 {
