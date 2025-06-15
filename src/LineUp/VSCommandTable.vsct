@@ -1,37 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <Extern href="stdidcmd.h"/>
-  <Extern href="vsshlids.h"/>
-  <Include href="KnownImageIds.vsct"/>
-  <Include href="VSGlobals.vsct"/>
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+	<Include href="KnownImageIds.vsct"/>
+	<Include href="VSGlobals.vsct"/>
 
-  <Commands package="LineUp">
-    <Groups>
-      <Group guid="LineUp" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="VSMainMenu" id="Edit"/>
-      </Group>
-    </Groups>
+	<Commands package="LineUp">
+		<Groups>
+			<Group guid="LineUp" id="MyMenuGroup" priority="0x0600">
+				<Parent guid="VSMainMenu" id="Edit"/>
+			</Group>
+		</Groups>
 
-    <!--This section defines the elements the user can interact with, like a menu command or a button
-        or combo box in a toolbar. -->
-    <Buttons>
-      <Button guid="LineUp" id="MyCommand" priority="0x0100" type="Button">
-        <Parent guid="LineUp" id="MyMenuGroup" />
-        <Icon guid="ImageCatalogGuid" id="SortAscending" />
-        <CommandFlag>IconIsMoniker</CommandFlag>
-        <Strings>
-          <ButtonText>Rearrange lines in ascending order</ButtonText>
-          <LocCanonicalName>.Edit.LineUp</LocCanonicalName>
-        </Strings>
-      </Button>
-    </Buttons>
-  </Commands>
+		<Buttons>
+			<Button guid="LineUp" id="MyCommand" priority="0x0100" type="Button">
+				<Parent guid="LineUp" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="SortAscending" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<CommandFlag>DynamicVisibility</CommandFlag>
+				<CommandFlag>DefaultInvisible</CommandFlag>
+				<Strings>
+					<ButtonText>Rearrange lines in ascending order</ButtonText>
+					<LocCanonicalName>.Edit.LineUp</LocCanonicalName>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
 
-  <Symbols>
-    <GuidSymbol name="LineUp" value="{c535264e-c814-4d76-a693-3364e13db265}">
-      <IDSymbol name="MyMenuGroup" value="0x0001" />
-      <IDSymbol name="MyCommand" value="0x0100" />
-    </GuidSymbol>
-  </Symbols>
+	<KeyBindings>
+		<KeyBinding guid="LineUp" id="MyCommand" editor="guidVSStd97" key1="R" mod1="Control" mod2="Shift" />
+	</KeyBindings>
+	
+	<Symbols>
+		<GuidSymbol name="LineUp" value="{c535264e-c814-4d76-a693-3364e13db265}">
+			<IDSymbol name="MyMenuGroup" value="0x0001" />
+			<IDSymbol name="MyCommand" value="0x0100" />
+		</GuidSymbol>
+	</Symbols>
 </CommandTable>
