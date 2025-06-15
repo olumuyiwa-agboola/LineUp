@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.Text;
+﻿using EnvDTE;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -34,11 +34,7 @@ namespace LineUp
 
                 using (var edit = docView.TextBuffer.CreateEdit())
                 {
-                    var span = new Span(
-                        snapshot.GetLineFromLineNumber(startLine).Start.Position,
-                        snapshot.GetLineFromLineNumber(endLine).End.Position
-                    );
-                    edit.Replace(span, newText);
+                    edit.Replace(selection, newText);
                     edit.Apply();
                 }
             }

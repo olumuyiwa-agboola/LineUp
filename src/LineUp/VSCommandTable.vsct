@@ -18,18 +18,16 @@
 				<Parent guid="LineUp" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="SortAscending" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
-				<CommandFlag>DynamicVisibility</CommandFlag>
-				<CommandFlag>DefaultInvisible</CommandFlag>
 				<Strings>
 					<ButtonText>Rearrange lines in ascending order</ButtonText>
-					<LocCanonicalName>.Edit.LineUp</LocCanonicalName>
+					<LocCanonicalName>.Edit.LineUp.RearrangeLinesInAscendingOrder</LocCanonicalName>
 				</Strings>
 			</Button>
 		</Buttons>
 	</Commands>
 
 	<KeyBindings>
-		<KeyBinding guid="LineUp" id="MyCommand" editor="guidVSStd97" key1="R" mod1="Control" mod2="Shift" />
+		<KeyBinding guid="LineUp" id="MyCommand" editor="guidVSStd97" key1="R" mod1="Control Shift" />
 	</KeyBindings>
 	
 	<Symbols>
