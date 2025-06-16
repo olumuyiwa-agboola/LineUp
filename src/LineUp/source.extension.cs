@@ -10,7 +10,7 @@ namespace LineUp
     {
         public const string Id = "LineUp.ddb701d6-4b7d-41e7-a011-c1f2a7c36d17";
         public const string Name = "Line Up";
-        public const string Description = @"Line Up is a simple, lightweight Visual Studio extension that tidies up your code by rearranging selected lines in ascending order of length—giving your code blocks a clean, triangular aesthetic, if you're into that kinda thing 😉. Just select the lines you want to rearrange and hit Ctrl + Shift + R!";
+        public const string Description = @"A simple code rearrangement tool.A";
         public const string Language = "en-US";
         public const string Version = "1.0.1";
         public const string Author = "Olumuyiwa Agboola";
