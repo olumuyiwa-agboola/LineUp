@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="LineUp.ddb701d6-4b7d-41e7-a011-c1f2a7c36d17" Version="1.0.1" Language="en-US" Publisher="Olumuyiwa Agboola" />
+        <Identity Id="LineUp.ddb701d6-4b7d-41e7-a011-c1f2a7c36d17" Version="1.0.2" Language="en-US" Publisher="Olumuyiwa Agboola" />
         <DisplayName>Line Up</DisplayName>
         <Description xml:space="preserve">A simple code rearrangement tool.A</Description>
         <License>LICENSE.txt</License>

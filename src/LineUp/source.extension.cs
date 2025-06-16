@@ -12,7 +12,7 @@ namespace LineUp
         public const string Name = "Line Up";
         public const string Description = @"A simple code rearrangement tool.A";
         public const string Language = "en-US";
-        public const string Version = "1.0.1";
+        public const string Version = "1.0.2";
         public const string Author = "Olumuyiwa Agboola";
         public const string Tags = "";
         public const bool IsPreview = false;
