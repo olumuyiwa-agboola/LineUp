@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="LineUp.ddb701d6-4b7d-41e7-a011-c1f2a7c36d17" Version="1.0.2" Language="en-US" Publisher="Olumuyiwa Agboola" />
         <DisplayName>Line Up</DisplayName>
-        <Description xml:space="preserve">A simple code rearrangement tool.A</Description>
+        <Description xml:space="preserve">A simple code rearrangement tool.</Description>
         <License>LICENSE.txt</License>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
